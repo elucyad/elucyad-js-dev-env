@@ -1,0 +1,44 @@
+{
+    "name": "elucyad-js-dev-env",
+    "version": "1.0.0",
+    "description": "Javascript Development Environment",
+    "dependencies": {
+        "browserify": "^14.5.0",
+        "requirejs": "^2.3.5",
+        "systemjs": "^0.20.19"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-register": "^6.26.0",
+        "chai": "^4.1.2",
+        "cheerio": "^0.22.0",
+        "eslint": "^4.13.1",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-watch": "^3.1.3",
+        "express": "^4.16.2",
+        "http-server": "^0.10.0",
+        "jasmine": "^2.8.0",
+        "jsdom": "^9.4.2",
+        "mocha": "^4.0.1",
+        "open": "0.0.5",
+        "webpack": "^3.10.0",
+        "webpack-dev-middleware": "^1.12.2"
+    },
+    "scripts": {
+        "start:script": "node ./buildScripts/srcServer.js",
+        "start": "node_modules/.bin/http-server",
+        "bundleAndTranspile:scripts": "webpack",
+        "bundle:scripts": "webpack modules/app.js build/bundle.js",
+        "bundle:browserify": "browserify modules/app.js --outfile dist/bundle.js",
+        "lint": "esw modules",
+        "lint:watch": "npm run lint -- --watch",
+        "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+        "test:watch": "npm run test -- --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

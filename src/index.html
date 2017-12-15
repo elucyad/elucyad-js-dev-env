@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello how r u!</h1>
+    <table style="border:solid 1px black;">
+        <thead>
+            <th>EMployee Name</th>
+            <th>EMployee Salary</th>
+        </thead>
+
+        <tr>
+            <td>Employee Name:</td>
+            <td><input id="empName" type="=text" /></td>
+        </tr>
+
+        <tr>
+            <td>Working Hours:</td>
+            <td><input id="empWorkingHours" type="=text" /></td>
+        </tr>
+
+        <tr>
+            <td>
+                <input id="btnSetInfo" type="button" value="Set Info!!!"></input>
+                <input id="btnGetInfo" type="button" value="Get Info!!!"></input>
+            </td>
+
+        </tr>
+    </table>
+    <div id="result">
+
+    </div>
+
+    <!-- <script src="..\dist\bundle.js"></script> -->
+    <!-- <script src="../node_modules/systemjs/dist/system.js"></script> -->
+
+    <script src="../build/bundle.js"></script>
+
+    <!-- <script>
+        System.config({
+            meta: {
+                format: 'cjs'
+            }
+        });
+
+        System.import('../modules/app.js');
+    </script> -->
+
+    <!-- <script data-main="../modules/app.js" src="../node_modules/requirejs/require.js"></script> -->
+    <!-- <script src="..\modules\employee-module.js"></script>
+    <script src="..\modules\display-module.js"></script>
+    <script src="..\modules\app.js"></script> -->
+
+</body>
+
+</html>
